@@ -1,9 +1,23 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const BlogPost = () => {
-  const { markdownRemark } = useStaticQuery(graphql`
-  query Post($slug: String) {
+import Layout from "../components/Layout"
+import SEO from "../components/seo"
+
+const BlogPost = ({ data }) => {
+  const post = data.markdownRemark
+
+  return (
+    <Layout>
+      <SEO title={post.frontmatter.title} />
+      <h1>Title: {post.frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+      </Layout>
+  )
+}
+
+export const query = graphql`
+  query Post($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
@@ -11,16 +25,5 @@ const BlogPost = () => {
       html
     }
   }
-`)
-
-const post = markdownRemark
-
-return (
-  <>
-  <h1>Title: {post.frontmatter.title}</h1>
-  <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-  </>
-)
-}
-
-export default BlogPost
+`
+export default BlogPost          
