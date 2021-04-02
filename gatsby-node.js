@@ -72,7 +72,8 @@ exports.createPages = ({ graphql, actions }) => {
             // in page queries as GraphQL variables.
             slug: node.fields.slug,
             previousPost: next,
-            nextPost: previousPost
+            nextPost: previous
+          },
         })
       })
 

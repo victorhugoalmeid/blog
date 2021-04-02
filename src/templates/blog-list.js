@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
@@ -48,6 +49,7 @@ const BlogList = props => {
     </Layout>
   )
 }
+
 export const query = graphql`
   query PostList($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
@@ -73,4 +75,5 @@ export const query = graphql`
     }
   }
 `
+
 export default BlogList
