@@ -6,22 +6,27 @@ export const SearchWrapper = styled.section`
   flex-direction: column;
   width: 100%;
   transition: opacity 0.4s;
+
   .ais-InstantSearch__root {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
   }
+
   .ais-SearchBox,
   .ais-Stats {
     padding: 0.5rem 3rem;
   }
+
   .ais-SearchBox {
     padding-top: 6rem;
   }
+
   .ais-Stats {
     color: var(--texts);
   }
+  
   .ais-SearchBox-input {
     background: none;
     border: none;
