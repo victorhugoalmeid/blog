@@ -130,14 +130,10 @@ export const MainContent = styled.section`
   }
 
   blockquote {
-    color: var(--texts);
+    color: var(--postColor);
     border-left: 0.3rem solid var(--highlight);
     padding: 0 1.875rem;
     margin: 3.125rem auto;
-
-    ${media.lessThan('large')`
-      margin-left: 1rem;
-    `}
   }
 
   hr {
@@ -176,6 +172,7 @@ export const MainContent = styled.section`
       font-size: 1.375rem;
     `}
   }
+
   h3 {
     font-size: 1.6rem;
 
@@ -183,9 +180,11 @@ export const MainContent = styled.section`
       font-size: 1.125rem;
     `}
   }
+
   h4 {
     font-size: 1.4rem;
   }
+  
   h5 {
     font-size: 1.2rem;
   }
