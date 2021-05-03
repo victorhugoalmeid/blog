@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import scrollToTop from "../../utils/scrollToTop"
 
 import { Home } from '@styled-icons/boxicons-solid/Home'
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
@@ -18,6 +19,7 @@ const MenuBar = () => {
   const isDarkMode = theme === "dark"
   const isListMode = display === "list"
 
+  // the same of DidMount
   useEffect(() => {
     setTheme(window.__theme)
     setDisplay(window.__display)
@@ -50,7 +52,7 @@ const MenuBar = () => {
          title="Pesquisar"
          >
           <S.MenuBarItem>
-            <Search />
+          <Search className="search" />
           </S.MenuBarItem>
         </S.MenuBarLink>
       </S.MenuBarGroup>
@@ -73,7 +75,7 @@ const MenuBar = () => {
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o Topo">
+        <S.MenuBarItem title="Ir para o Topo" onClick={scrollToTop}>
           <Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>
