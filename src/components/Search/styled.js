@@ -62,10 +62,12 @@ export const SearchWrapper = styled.section`
     font-size: 1.6rem;
     padding: 0.5rem;
     width: 100%;
+
     &::placeholder {
       color: var(--texts);
     }
   }
+
   .ais-SearchBox-submit,
   .ais-SearchBox-reset {
     display: none;

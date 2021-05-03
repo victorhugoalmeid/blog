@@ -6702,7 +6702,7 @@ gatsby-page-utils@^1.4.0:
     lodash "^4.17.21"
     micromatch "^4.0.2"
 
-gatsby-plugin-algolia-search@0.5.7:
+gatsby-plugin-algolia-search@^0.5.7:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-algolia-search/-/gatsby-plugin-algolia-search-0.5.7.tgz#d129c65b54c0301993888d210605a18055d3fb3a"
   integrity sha512-ZeVx7wHvt5GS7RQtqqzyTgoeA/OhgTJ0SLMBstuxaUCQdMv/BiDk3d3kO7sUtBjAarxXKl06KZkISsi1NbkOkg==
