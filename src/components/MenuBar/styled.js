@@ -46,6 +46,13 @@ export const MenuBarLink = styled(AniLink)`
   }
 `
 
+export const MenuBarGroupMobile = styled.div`
+  display: none;
+  ${media.lessThan('large')`
+    display: block;
+  `}
+`
+
 export const MenuBarItem = styled.span`
   color: var(--texts);
   cursor: pointer;
@@ -84,5 +91,11 @@ export const MenuBarItem = styled.span`
     padding: .9rem;
     position: relative;
     width: 3.2rem;
+  `}
+`
+export const MenuBarGridMobile = styled.div`
+  display: none;
+  ${media.greaterThan('large')`
+    display: block;
   `}
 `

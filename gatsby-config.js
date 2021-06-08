@@ -24,6 +24,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-staurosdevelopment-tk`
+    }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
