@@ -48,7 +48,7 @@ export const MenuBarLink = styled(AniLink)`
 
 export const MenuBarGroupMobile = styled.div`
   display: none;
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     display: block;
   `}
 `
@@ -69,7 +69,7 @@ export const MenuBarItem = styled.span`
       color: #e2e240;
     }
   }
-  
+
   &:hover {
     color: var(--highlight);
   }
@@ -85,7 +85,7 @@ export const MenuBarItem = styled.span`
       color: var(--highlight);
     }
   `}
-  
+
   ${media.lessThan("large")`
     height: 3.2rem;
     padding: .9rem;
@@ -95,7 +95,7 @@ export const MenuBarItem = styled.span`
 `
 export const MenuBarGridMobile = styled.div`
   display: none;
-  ${media.greaterThan('large')`
+  ${media.greaterThan("large")`
     display: block;
   `}
 `
