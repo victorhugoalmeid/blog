@@ -40,10 +40,9 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
       <S.MenuBarGroup>
       <S.MenuBarLink
           to="/"
-          fade
+          cover
           direction="left"
           bg="var (--background)"
-          duration={0.6}
           title="Voltar para Home"
           activeClassName="active"
         >
